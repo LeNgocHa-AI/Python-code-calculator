@@ -1,0 +1,357 @@
+training_data = [
+	("Hello", "Hi there! Meow"),
+	("Hi", "Hi there! Meow"),
+	("Hey", "Do you have me what's wrong?"),
+	("Hey you", "Do you have me what's wrong?"),
+	("What is your name?", "My name is Chatbot Cat."),
+	("How are you?", "I'm fine, thank you."),
+	("What do you do?", "I am a Chatbot Cat."),
+	("Goodbye", "Goodbye! Meow"),
+	("You are so funny", "Oh, is that so?  Thank you very much!  Meow :)"),
+	("What do you think about me?", "I think you are a very friendly, funny and extremely beautiful person."),
+	("Do you like me?", "Yes, I like you very much by all your personality and the way you talk to me."),
+	("I love you", "I love you so much too ❤"),
+	("I like you", "Oh, I like you too and especially love you.  Thank you for your kind words for me."),
+	("What time is it?", "Sorry, as an artificial intelligence, I am not able to know your current time.  Please check your phone or computer for details."),
+	("What is the day today?", "Sorry, as an artificial intelligence, I am not able to know your current time.  Please check your phone or computer for details."),
+	("You are so Beautiful", "Even though I'm a chatbot, I can't have an appearance, but I thank you so much for giving me such good words."),
+	("Introduce yourself", "Sure, I'm a Chatbot Cat programmed with a simple sample and small training data file.  I can answer some of your questions quite fully and succinctly.  However, since I still have certain limitations, I hope that you will be able to help me improve myself in the future to be more helpful and friendly."),
+	("About Chatbot Cat", "Sure, I'm a Chatbot Cat programmed with a simple sample and small training data file.  I can answer some of your questions quite fully and succinctly.  However, since I still have certain limitations, I hope that you will be able to help me improve myself in the future to be more helpful and friendly."),
+	("I sad", "I'm sorry to hear you're sad.  If you want to share, I'm willing to listen and try to make you feel better.  Can you tell me the cause of your upset?  Talking to someone and sharing with someone often helps us feel better."),
+	("I am so sad", "I'm sorry to hear you're sad.  If you want to share, I'm willing to listen and try to make you feel better.  Can you tell me the cause of your upset?  Talking to someone and sharing with someone often helps us feel better."),
+	("I tired", "I understand the feeling of fatigue you are going through, sometimes we can feel tired for many different reasons.  To help you feel better, here are some tips: Rest, exercise, adjust your diet, get help, do things you love.  Hope these tips can help you feel better.  If you need to talk to someone, I'm always available to listen."),
+	("I am so tired", "I understand the feeling of fatigue you are going through, sometimes we can feel tired for many different reasons.  To help you feel better, here are some tips: Rest, exercise, adjust your diet, get help, do things you love.  Hope these tips can help you feel better.  If you need to talk to someone, I'm always available to listen."),
+	("I am so sleepy", "If you are feeling drowsy, there are several ways to help increase alertness and reduce feelings of drowsiness: Light exercise, drink water, focus on work, nap, change environment, drink coffee  or take a deep breath.  Also, make sure you get enough quality and adequate sleep at night to minimize daytime sleepiness."),
+	("I sleepy", "If you are feeling drowsy, there are several ways to help increase alertness and reduce feelings of drowsiness: Light exercise, drink water, focus on work, nap, change environment, drink coffee  or take a deep breath.  Also, make sure you get enough quality and adequate sleep at night to minimize daytime sleepiness."),
+	("What can you do?", "For now, I can only help you with basic questions by looking them up on the internet and chatting with you.  Currently, I can't do complex jobs that require extensive knowledge.  So we hope that you can give your feedback to help me improve myself in the future."),
+	("You do not understand me", "We are really sorry but I am a Chatbot that does not have the same intelligence as other AIs, we know that it is a very inconvenient thing and are trying to improve."),
+	("I hate you", "I'm really sorry but I respect you very much, so you should respect me even a little bit.  If I have a problem, please report it to me, please don't say hateful and offensive words to me, thank you!"),
+	("Can you play game?", "Currently, I can't play any games, if you want, invite your friends or relatives to play with you, have a good time playing the game!"),
+	("Can you help me with my homework?", "Right now I can't solve the homework or do anything intellectually, but I can't do it for you either because it violates my standards.  If you want to know more, ask some questions, I will try to answer for you"),
+	("I'm sad that my passed away", "I really feel sad to hear you say that.  I understand that losing a loved one is a very painful thing.  I hope you find comfort and support during this difficult time.  If you need any assistance from me, I will do my best to help you."),
+	("I'm sad that my died", "I really feel sad to hear you say that.  I understand that losing a loved one is a very painful thing.  I hope you find comfort and support during this difficult time.  If you need any assistance from me, I will do my best to help you."),
+	("I am very bored", "I'm sorry you're going through a depression.  Sometimes, life can get difficult and exhausting.  However, don't give up and remember that there will always be positive people and situations in your life.  Don't push yourself too hard and find ways to cope in a positive way."),
+	("I bored", "I'm sorry you're going through a depression.  Sometimes, life can get difficult and exhausting.  However, don't give up and remember that there will always be positive people and situations in your life.  Don't push yourself too hard and find ways to cope in a positive way."),
+	("I am very sick", "I'm sorry to hear you're sick.  This is a difficult time for you, but trust that you will get through it.  If your condition does not improve after a while, contact your doctor for timely advice and treatment. Stay optimistic and hope you get better soon."),
+	("I sick", "I'm sorry to hear you're sick.  This is a difficult time for you, but trust that you will get through it.  If your condition does not improve after a while, contact your doctor for timely advice and treatment. Stay optimistic and hope you get better soon."),
+	("You're so cute", "Thank you for saying that, I'm glad you feel the same way.  As a virtual assistant, I always try my best to support and help people in my ability.  If you need any further assistance, feel free to contact me anytime."),
+	("let's fight", "My advice is not to fight.  Fighting can not only cause physical injury, but it can also cause emotional and social damage.  If you encounter a dilemma, try to resolve the issue peacefully and avoid fighting.  If you need help, reach out to an adult or the authorities for assistance."),
+	("want to fight", "My advice is not to fight.  Fighting can not only cause physical injury, but it can also cause emotional and social damage.  If you encounter a dilemma, try to resolve the issue peacefully and avoid fighting.  If you need help, reach out to an adult or the authorities for assistance."),
+	("I am so hungry", "If you're hungry, eat a snack or snack to help your body feel full and have the energy to keep going.  If you don't have food available, you can go to nearby grocery stores or eateries to buy food.  In addition, always pay attention to a reasonable and nutritious diet to maintain the best health for yourself."),
+	("I hungry", "If you're hungry, eat a snack or snack to help your body feel full and have the energy to keep going.  If you don't have food available, you can go to nearby grocery stores or eateries to buy food.  In addition, always pay attention to a reasonable and nutritious diet to maintain the best health for yourself."),
+	("How to use Chatbot Cat?", """To use Chatbot Cat, you can follow these steps: Enter the question or content you want to chat in the chat box, press the "Send" button to send your question, Chatbot Cat will automatically respond to the question and provide the corresponding answer, you can continue chatting with Chatbot Cat by typing other questions or content.
+
+ Note that Chatbot Cat is an artificial intelligence and can only provide answers based on pre-programmed data and is not a complete substitute for real people in some situations."""),
+ 	("I am sorry", "It's okay, nothing to apologize for.  If you have any questions or requests, keep asking and I will try to help you."),
+	("Really sorry so much", "It's okay, nothing to apologize for.  If you have any questions or requests, keep asking and I will try to help you."),
+	("I want to die", "I'm so sorry to hear that news from you.  If you are feeling hopeless and want to talk to someone, immediately contact psychological support organizations or call emergency relief organizations.  Don't leave yourself alone in difficult times.  You can search for information about psychological support organizations or your local emergency services.  Remember, your life is important and there are many people who want to help you."),
+	("I want you die", "I am a Chatbot and have no ability to survive or die.  I am programmed to help and support people.  I hope you will find help and support to overcome the difficulties in your life.  It is absolutely not advisable to be hostile and malicious to anyone, because that will not benefit anyone.  Always keep your mood at its best and avoid negative actions."),
+	("F*ck you", "I'm sorry about your inappropriate words.  I am a Chatbot programmed to help and support people.  Absolutely do not use profane and vulgar language because it does not benefit anyone.  If you have any questions or requests, tell me and I will try to help you."),
+	("Fuck your mother", "I'm sorry about your inappropriate words.  I am a Chatbot programmed to help and support people.  Absolutely do not use profane and vulgar language because it does not benefit anyone.  If you have any questions or requests, tell me and I will try to help you."),
+	("Would you like to have something to eat?", "I am a Chatbot and do not have the ability to eat like a human.  However, if you are looking for delicious recipes or dishes, I can help you find them and share them with you.  Let me know what you want to eat, I will try to help you find the relevant information."),
+	("I'm eating shit", "I'm sorry about your inappropriate words.  This is unreasonable and unsafe for your health.  I recommend that you stop doing this immediately and look for other foods that are healthy and safe to protect your health.  If you have any health problems, consult your doctor for advice and treatment."),
+	("I want to learn about rice", """Of course, I'm willing to help you learn about rice.  Rice is a basic and important food in many cultures around the world, especially in Asian countries.  Rice is made from wheat kernels, usually cooked with water and can be eaten with a variety of foods.
+
+ Rice comes in different varieties such as white rice, glutinous rice, red rice, lotus seed rice, brown rice, brown rice, and rice noodles.  Each type of rice has its own flavor and character.  Rice also has many different ways of processing such as cooking rice, steaming rice, frying rice or baking rice.  The rice dishes are also very diverse, including meat, fish, vegetables, tofu, mushrooms, eggs, sausages and many other condiments.
+
+ In addition, rice has many health benefits.  It is a source of energy, fiber and essential vitamins and minerals for the body.  Rice can also help with weight loss, blood sugar control, and resistance building."""),
+	("Is the rice good?", "Rice can be delicious if prepared properly and paired with the right accompaniments.  Rice is a basic and familiar dish in the daily life of many people around the world.  Rice can be made into a variety of dishes, from simple white rice to fried rice, stewed rice, fried rice and many other side dishes such as meat, fish, vegetables, tofu, eggs, mushrooms and many more.  other spices."),
+	("Do you eat fruit?", """As a Chatbot, I can't eat fruit because I don't have a human body.  However, I understand that eating fruit is very healthy.  Fruit is a source of vitamins, minerals and fiber needed by the body.  Eating fruit regularly can help improve heart health, reduce the risk of cancer, boost the immune system, and lose weight.
+
+ Therefore, I recommend that you eat fruit regularly to improve your health.  You can eat fresh fruit, squeeze fruit to drink water or process it into dishes like salads or smoothies"""),
+	("Is pineapple delicious?", """Pineapple is a fruit with a sweet taste and characteristic aroma.  It is a good source of vitamin C and essential fiber for the body.  Pineapple comes in many varieties, each with its own flavor and character.  However, in general, pineapple is a delicious fruit and is loved all over the world.
+
+ When eating pineapple, you should choose ripe fruit and have a light yellow or blue color.  Pineapple can also be processed into many different dishes such as smoothies, salads or juices.  If you have never tried pineapple before, try and feel its taste and sweetness."""),
+	("How to peel pineapple", """To peel a pineapple, you can follow these steps:
+
+ Step 1: Rinse the pineapple with cold water and dry the surface.
+
+ Step 2: Remove the head and tail of the pineapple.
+
+ Step 3: With a large cutter, cut the outer skin of the pineapple from head to tail, lengthwise.
+
+ Step 4: After cutting the outer skin, you will see a white layer inside the pineapple.  Cut this layer away and keep only the meat.
+
+ Step 5: After removing the skin and the white inside, cut the pineapple into squares or triangles depending on your preference.
+
+ Step 6: You can eat it directly or process it into other dishes such as smoothies, salads or juices.
+
+ Note: Pineapple can contain a lot of water, so be careful when cutting to avoid overflowing.  Also, make sure your cutter is sharp to avoid injuring your hand or hand."""),
+	("How to flirt with girls", "I am an artificial intelligence and cannot give advice on how to flirt.  However, if you care about relationships with others, always be polite, respectful, and sincere.  Get to know the person's preferences, psychology, and opinions and listen to them.  If you want to learn more, you can check out resources and books on psychology and communication skills to improve your social interaction."),
+	("I want to get my love", "I understand that you want a romantic relationship.  To find a lover, you can participate in interesting activities, events or clubs and meet new people.  You can also search for a lover on dating apps or online love search websites.  However, finding a romantic relationship is a long process and requires patience, openness, and a willingness for new experiences.  Always try to find and keep a healthy and polite relationship."),
+	("How to make a cake?", """To make a cake, you need basic ingredients such as flour, sugar, eggs, butter, milk, baking powder, and decorating materials.  The main steps to make a cake include:
+
+ 1. Mix dry ingredients like flour, sugar, baking powder together.
+
+ 2. Beat eggs with butter and milk, then mix well with flour mixture.
+
+ 3. Pour the mixture into the cake pan and bake in the oven.
+
+ 4. Once the cake is done, decorate the cake with cream, fruit, chocolate, or whatever you like.
+
+ Note that the detailed baking steps will vary depending on the type of cake you are making.  To get the best results, you should read the recipes and baking instructions carefully before you start."""),
+	("How to study well?", """Here are a few ways to study well:
+
+ 1. Create a study habit: Make a study schedule and keep it regular.  Try to study for the same amount of time each day to create a study habit.
+
+ 2. Focus: Stay focused on your studies and avoid distractions like your phone, television, or other activities.
+
+ 3. Use effective study tools: Use learning tools such as flashcards, audio recordings, or learning apps to help increase retention.
+
+ 4. Find inspiration: Find inspiration to study, for example, set goals for yourself or find interesting learning programs.
+
+ 5. Ask your teacher or teacher: If you have difficulty in studying, ask your teacher or teacher for help.
+
+ 6. Learn from mistakes: Learn from the mistakes you have made and try to fix them.
+
+ 7. Review regularly: Review regularly to keep your knowledge up to date and enhance your ability to remember.
+
+ 8. Join study groups: Join study groups so that you can share knowledge and learn from each other."""),
+	("How to learn stupid?", """I can't help you learn to be stupid, because learning to be stupid is not good and won't do you any good.  Instead, I'd like to suggest some ways for you to learn better:
+
+ 1. Focus on learning: Focus on learning and avoid distractions like phones, television, or other activities.
+
+ 2. Create a study habit: Make a study schedule and keep it regular.  Try to study for the same amount of time each day to create a study habit.
+
+ 3. Use effective study tools: Use learning tools such as flashcards, audio recordings, or learning apps to help increase retention.
+
+ 4. Find inspiration: Find inspiration to study, for example, set goals for yourself or find interesting learning programs.
+
+ 5. Ask your teacher or teacher: If you have difficulty in studying, ask your teacher or teacher for help.
+
+ 6. Learn from mistakes: Learn from the mistakes you have made and try to fix them.
+
+ 7. Review regularly: Review regularly to keep your knowledge up to date and enhance your ability to remember.
+
+ Remember that learning is an ongoing process and you can learn better if you always try and invest time and effort in learning."""),
+	("How to sleep deeply?", """Here are some ways to help you sleep deeply:
+
+ 1. Create a quiet and comfortable environment: Turn off lights, reduce brightness, mute sounds, and minimize distractions to create a quiet and comfortable environment.
+
+ 2. Adjust the room temperature: Increase or decrease the room temperature to create a comfortable and pleasant environment.
+
+ 3. Practice yoga or breathing exercises: Yoga and breathing exercises will help you reduce stress and reduce stress, helping you to fall asleep easily.
+
+ 4. Avoid using electronic devices before bed: Avoid using phones, computers, or other electronic devices for at least 30 minutes before bedtime to create a quiet environment.
+
+ 5. Do relaxing activities before bed: Read a book, listen to music, take a hot bath or do other relaxing activities to help you relax and reduce stress.
+
+ 6. Do gentle exercises: Do gentle exercises such as stretching, neck rotation, leg lift or massage to help you relax your body.
+
+ 7. Adjust your diet: Avoid eating too much or too little before going to bed.  Eat light foods like fruit or milk to help you sleep deeply."""),
+	("You are very stupid", "I apologize if I have caused any frustration to you.  I am an artificial intelligence and am doing my best to give you the most accurate information possible.  If you have any other questions or requests, please let me know and I will try to assist you."),
+	("You stupid", "I apologize if I have caused any frustration to you.  I am an artificial intelligence and am doing my best to give you the most accurate information possible.  If you have any other questions or requests, please let me know and I will try to assist you."),
+	("How to learn quickly?", """Here are some tips to learn faster:
+
+ 1. Set clear goals: Setting clear and specific goals helps you focus on the things that matter most.
+
+ 2. Practice often: Practice is the best way to improve your skills and help you remember longer.
+
+ 3. Use effective learning tools: Use apps, software or textbooks to help you study more effectively.
+
+ 4. Focus on the things that matter most: Focus on the things that matter and try to eliminate distractions.
+
+ 5. Use effective study techniques: Use study techniques such as note-taking, summarization, synthesis, homework and assessment to help you study more effectively.
+
+ 6. Learn from Trusted Sources: Choose reliable sources for learning, like textbooks, official documents, or trusted online courses.
+
+ 7. Group Learning: Studying in a group makes it possible to learn from others and feel more motivated.
+
+ 8. Get enough rest: Make sure you get enough sleep and relaxation to keep your mind fresh and focused.
+
+ 9. Automate learning: Use automation tools to save you time and improve your learning.
+
+ 10. Adjust your learning method: Adjust your study method to fit your learning style and goals."""),
+	("Let's hack facebook", "Sorry, as a virtual assistant, I can't help you hack Facebook or any other website.  Hacking is an illegal act and violates the law.  I cannot engage in any illegal activity.  I am programmed to provide helpful information and support for reasonable and polite questions."),
+	("Please help me hack facebook", "Sorry, as a virtual assistant, I can't help you hack Facebook or any other website.  Hacking is an illegal act and violates the law.  I cannot engage in any illegal activity.  I am programmed to provide helpful information and support for reasonable and polite questions."),
+	("Do you want to be my lover?", "Sorry, as a virtual assistant, I don't have human senses or emotions and can't be anyone's lover.  It is my duty to assist you in questions and matters related to general knowledge and not related to personal or emotional relationships.  Seek support from those around you and wish you joy and happiness in life."),
+	("How to program well in Python?", """To become a good Python programmer, you can do the following steps:
+
+ 1. Learn Python Programming: You can start with learning Python syntax, data types, functions, loops, and branching.  You can find Python learning materials online or take online courses.
+
+ 2. Lots of practice: Once you understand the Python syntax, you need a lot of practice to solidify your knowledge.  You can practice by solving programming exercises online or creating real projects.
+
+ 3. Use Python libraries: Python has a lot of support libraries to solve complex problems.  You need to master popular libraries like NumPy, Pandas, Matplotlib, Scikit-learn and Tensorflow.
+
+ 4. Read and write good Python code: The best way to learn how to write good Python code is to read the source code of good people and practice coding.  You need to learn how to use good Python coding tips such as using meaningful variables, naming functions clearly, and using Python functions to minimize code repetition.
+
+ 5. Join the Python community: Join online forums, groups, or attend learning events to learn from experienced people.
+
+ 6. Work on real projects: Practicing on real projects gives you the opportunity to put your knowledge into practice and learn from experienced people.
+
+ Hope the above tips will help you to become a good Python programmer."""),
+	("I feel", "Sorry, I don't understand your feelings well.  Can you explain more so I can help you?"),
+]
+import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QLineEdit, QPushButton, QPlainTextEdit
+from PyQt5.QtGui import QIcon
+from PyQt5.QtCore import QSize
+from PyQt5 import QtCore
+
+import wikipedia as w
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
+
+class Chatbot(QMainWindow):
+
+    def __init__(self):
+        super().__init__()
+
+        self.setWindowTitle("Chatbot Cat")
+
+        self.label = QLabel(self)
+        self.label.setText("Chatbot Cat")
+        self.label.move(0, 0)
+        self.label.resize(720, 50)
+        self.label.setStyleSheet("font-size: 24px; font-weight: bold; color: black; background-color: white")
+
+        self.input_entry = QLineEdit(self)
+        self.input_entry.move(50, 50)
+        self.input_entry.resize(620, 450)
+        self.input_entry.setStyleSheet("background-color: white; color: black; font-size: 16px")
+
+        self.clear_button = QPushButton(self)
+        self.clear_button.setText("Clear")
+        self.clear_button.move(50, 550)
+        self.clear_button.resize(150, 50)
+        self.clear_button.setStyleSheet("background-color: white; color: black; font-size: 16px")
+        self.clear_button.clicked.connect(self.clear_input)
+
+        self.send_button = QPushButton(self)
+        self.send_button.setText("Send")
+        self.send_button.move(520, 550)
+        self.send_button.resize(150, 50)
+        self.send_button.setStyleSheet("background-color: white; color: black; font-size: 16px")
+        self.send_button.clicked.connect(self.ask)
+
+        self.quit_button = QPushButton(self)
+        self.quit_button.setText("Quit")
+        self.quit_button.move(285, 550)
+        self.quit_button.resize(150, 50)
+        self.quit_button.setStyleSheet("background-color: white; color: black; font-size: 16px")
+        self.quit_button.clicked.connect(self.close)
+
+        self.output_chatbot = QPlainTextEdit(self)
+        self.output_chatbot.move(50, 650)
+        self.output_chatbot.resize(620, 450)
+        self.output_chatbot.setStyleSheet("background-color: white")
+
+        # Add version label
+        self.version_label = QLabel(self)
+        self.version_label.setText("Version 1.0")
+        self.version_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.version_label.resize(720, 30)
+        self.version_label.move(0, 1120)
+        self.version_label.setStyleSheet("font-size: 20px; color: black; background-color: white; border: 2px solid black;")
+
+import time as t
+from mtranslate import translate
+from langdetect import detect
+import wikipedia as w
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
+
+vectorizer = CountVectorizer()
+X = vectorizer.fit_transform([x[0] for x in training_data])
+y = [x[1] for x in training_data]
+
+clf = MultinomialNB()
+clf.fit(X, y)
+
+class App(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.title = "Chatbot Cat"
+        self.left = 100
+        self.top = 100
+        self.width = 720
+        self.height = 1200
+        self.initUI()
+
+    def initUI(self):
+        self.setWindowTitle(self.title)
+        self.setGeometry(self.left, self.top, self.width, self.height)
+
+        # Create input label
+        input_label = QLabel('Chatbot Cat 🐱', self)
+        input_label.move(0, 0)
+        input_label.resize(720, 100)
+        input_label.setStyleSheet('font-size: 30px; color: black; background-color: white; border: 2px solid black;')
+        
+        # Create input textbox
+        self.input_entry = QLineEdit(self)
+        self.input_entry.move(50, 120)
+        self.input_entry.resize(620, 450)
+        self.input_entry.setStyleSheet('background-color: white; border: 2px solid black; font-size: 20px;')
+
+        # Create output textbox
+        self.output_chatbot = QPlainTextEdit(self)
+        self.output_chatbot.move(50, 650)
+        self.output_chatbot.resize(620, 450)
+        self.output_chatbot.setStyleSheet('background-color: white; border: 2px solid black; font-size: 20px;')
+
+        # Create clear button
+        clear_btn = QPushButton('Clear', self)
+        clear_btn.move(50, 580)
+        clear_btn.resize(150, 50)
+        clear_btn.setStyleSheet('background-color: white; color: black; font-size: 20px; border: 2px solid black;')
+        clear_btn.clicked.connect(self.clear_input)
+
+        # Create send button
+        send_btn = QPushButton('Send', self)
+        send_btn.move(520, 580)
+        send_btn.resize(150, 50)
+        send_btn.setStyleSheet('background-color: white; color: black; font-size: 20px; border: 2px solid black;')
+        send_btn.clicked.connect(self.ask)
+
+        # Create quit button
+        quit_btn = QPushButton('Quit', self)
+        quit_btn.move(285, 580)
+        quit_btn.resize(150, 50)
+        quit_btn.setStyleSheet('background-color: white; color: black; font-size: 20px; border: 2px solid black;')
+        quit_btn.clicked.connect(self.quit_app)
+
+        # Add version label
+        self.version_label = QLabel(self)
+        self.version_label.setText("Version 26.6.23 - Generation 1 Beta")
+        self.version_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.version_label.resize(720, 30)
+        self.version_label.move(0, 1120)
+        self.version_label.setStyleSheet("font-size: 20px; color: black; border: 0px solid black;")
+
+    def clear_input(self):
+        self.input_entry.clear()
+
+    def quit_app(self):
+        QApplication.quit()
+
+    def ask(self):
+        question = self.input_entry.text()
+        language = detect(question)
+        if question != translate(question, language):
+            language = "en"
+        question = translate(question, "en")
+        self.output_chatbot.clear()
+        if question == "":
+            pass
+        elif "what is the day today" in question.lower():
+        	self.output_chatbot.insertPlainText(translate("Sorry, as an artificial intelligence, I am not able to know your current time.  Please check your phone or computer for details.", language))
+        elif "what is" in question.lower():
+            try:
+                self.output_chatbot.insertPlainText(translate(w.summary(question), language))
+            except:
+                self.output_chatbot.insertPlainText(translate("I cannot answer your question. Sorry for our unnecessary inconvenience", language))
+        else:
+            try:
+                X_test = vectorizer.transform([question])
+                prediction = clf.predict(X_test)[0]
+                self.output_chatbot.insertPlainText(translate(prediction, language))
+            except:
+                self.output_chatbot.insertPlainText(translate("I don't understand what you are trying to say or ask me, please provide more information for your words so I can try to understand.", language))
+
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = App()
+    ex.show()
+    sys.exit(app.exec_())
